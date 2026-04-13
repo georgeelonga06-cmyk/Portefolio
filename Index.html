@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Georges Elonga - Portfolio Développeur</title>
+    <link rel="stylesheet" href="Style.css">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                Georges Elonga
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#accueil" class="nav-link">Accueil</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#apropos" class="nav-link">A Propos</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#services" class="nav-link">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#portfolio" class="nav-link">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="accueil" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">Georges Elonga</h1>
+                <p class="hero-subtitle">Développeur créatif passionné par la création de solutions digitales
+                    exceptionnelles.</p>
+                <div class="hero-buttons">
+                    <a href="#portfolio" class="btn btn-primary">Voir Portfolio</a>
+                    <a href="#contact" class="btn btn-secondary">Contactez-moi</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="Image/IMG1.jpg" alt="Photo de Georges Elonga" class="profile-pic">
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="apropos" class="about">
+        <div class="container">
+            <h1 class="section-title">A Propos</h1>
+            <p class="section-subtitle">Quelques mots sur moi</p>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Bonjour ! Je suis Georges Elonga, un développeur web passionné avec une expérience dans la
+                        création de sites web
+                        modernes et responsives. J'adore transformer des idées en réalité digitale.</p>
+                </div>
+                <div class="skills">
+                    <h3>Mes Compétences</h3>
+                    <div class="skills-list">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                        <span>React</span>
+                        <span>Node.js</span>
+                        <span>Python</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h1 class="section-title">Services</h1>
+            <p class="section-subtitle">Ce que je propose</p>
+            <div class="services-grid">
+                <div class="service-card">
+                    <i class="fas fa-paint-brush"></i>
+                    <h3>Design Web</h3>
+                    <p>Création de designs UI/UX modernes et attractifs.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-code"></i>
+                    <h3>Développement</h3>
+                    <p>Développement front-end et back-end performant.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-mobile-alt"></i>
+                    <h3>Responsive</h3>
+                    <p>Sites adaptés à tous les écrans et appareils.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-rocket"></i>
+                    <h3>Optimisation</h3>
+                    <p>SEO et performance pour un maximum de visibilité.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <h1 class="section-title">Portfolio</h1>
+            <p class="section-subtitle">Mes projets récents</p>
+            <div class="portfolio-grid">
+                <div class="portfolio-item"
+                    onclick="openModal('Projet 1: Site e-commerce moderne avec React et Node.js.');">
+                    <img src="https://via.placeholder.com/400x300?text=Projet+1" alt="Projet 1">
+                    <div class="portfolio-overlay">
+                        <h3>Projet 1</h3>
+                    </div>
+                </div>
+                <div class="portfolio-item" onclick="openModal('Projet 2: Application mobile responsive.');">
+                    <img src="https://via.placeholder.com/400x300?text=Projet+2" alt="Projet 2">
+                    <div class="portfolio-overlay">
+                        <h3>Projet 2</h3>
+                    </div>
+                </div>
+                <div class="portfolio-item" onclick="openModal('Projet 3: Dashboard admin avec animations.');">
+                    <img src="https://via.placeholder.com/400x300?text=Projet+3" alt="Projet 3">
+                    <div class="portfolio-overlay">
+                        <h3>Projet 3</h3>
+                    </div>
+                </div>
+                <div class="portfolio-item" onclick="openModal('Projet 4: Landing page optimisée SEO.');">
+                    <img src="https://via.placeholder.com/400x300?text=Projet+4" alt="Projet 4">
+                    <div class="portfolio-overlay">
+                        <h3>Projet 4</h3>
+                    </div>
+                </div>
+                <div class="portfolio-item" onclick="openModal('Projet 5: Portfolio personnel interactif.');">
+                    <img src="https://via.placeholder.com/400x300?text=Projet+5" alt="Projet 5">
+                    <div class="portfolio-overlay">
+                        <h3>Projet 5</h3>
+                    </div>
+                </div>
+                <div class="portfolio-item" onclick="openModal('Projet 6: API REST avec base de données.');">
+                    <img src="https://via.placeholder.com/400x300?text=Projet+6" alt="Projet 6">
+                    <div class="portfolio-overlay">
+                        <h3>Projet 6</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Portfolio Modal -->
+        <div id="portfolioModal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <p id="modalText"></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <h1 class="section-title">Témoignages</h1>
+            <p class="section-subtitle">Ce que disent mes clients</p>
+            <div class="testimonials-grid">
+                <div class="testimonial">
+                    <p>"Excellent travail ! Site rapide et beau."</p>
+                    <h4>Client 1</h4>
+                </div>
+                <div class="testimonial">
+                    <p>"Professionnel et à l'écoute."</p>
+                    <h4>Client 2</h4>
+                </div>
+                <div class="testimonial">
+                    <p>"Résultats au-delà des attentes."</p>
+                    <h4>Client 3</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h1 class="section-title">Contact</h1>
+            <p class="section-subtitle">Discutons de votre projet</p>
+            <form class="contact-form">
+                <input type="text" placeholder="Votre Nom" required>
+                <input type="email" placeholder="Votre Email" required>
+                <textarea placeholder="Votre Message" rows="5" required></textarea>
+                <button type="submit" class="btn btn-primary">Envoyer</button>
+            </form>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <span>georgeelonga06@gmail.com</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <span>+243 904175297</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>République Démocratique du Congo</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Georges Elonga. Tous droits réservés.</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const hamburger = document.querySelector('.hamburger');
+        const navMenu = document.querySelector('.nav-menu');
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+
+        // Close menu on link click
+        document.querySelectorAll('.nav-link').forEach(n => n.addEventListener('click', () => {
+            hamburger.classList.remove('active');
+            navMenu.classList.remove('active');
+        }));
+
+        // Portfolio modal
+        function openModal(text) {
+            document.getElementById('modalText').textContent = text;
+            document.getElementById('portfolioModal').style.display = 'flex';
+        }
+
+        function closeModal() {
+            document.getElementById('portfolioModal').style.display = 'none';
+        }
+
+        // Scroll reveal animation
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate');
+                }
+            });
+        });
+
+        document.querySelectorAll('.service-card, .portfolio-item, .testimonial').forEach(el => observer.observe(el));
+
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Form submission (demo)
+        document.querySelector('.contact-form').addEventListener('submit', (e) => {
+            e.preventDefault();
+            alert('Message envoyé ! (Démo)');
+        });
+    </script>
+</body>
+
+</html>
